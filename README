@@ -1,53 +1,20 @@
-# API BrainyKids
+# ProyectoIntegrador BrainyKids
+## BrainyKids
+<p> El propósito de la aplicación BrainyKids es ofrecer una plataforma educativa interactiva enfocada en el aprendizaje de niños de 3 a 6 años, promoviendo el desarrollo cognitivo mediante actividades dinámicas, juegos educativos y contenido adaptado a su edad. </p>
+PROBLEMÁTICA
+<p> Actualmente, muchos niños en etapa preescolar no cuentan con herramientas digitales adecuadas para reforzar su aprendizaje de forma interactiva. Además, los métodos tradicionales pueden no adaptarse a todos los estilos de aprendizaje, especialmente en niños con dificultades de atención como el TDAH. </p> <p> Esto genera la necesidad de una plataforma que integre contenido educativo accesible, dinámico y personalizado, que facilite el aprendizaje tanto en casa como en el aula, permitiendo a los tutores y docentes dar seguimiento al progreso de los niños. </p>
+PROPUESTA DE SOLUCIÓN
+<p> BrainyKids es una plataforma educativa que busca facilitar el aprendizaje infantil mediante módulos interactivos, actividades guiadas y seguimiento del progreso del usuario. La aplicación permite a tutores y docentes gestionar el avance de los niños, asignar actividades y reforzar áreas de aprendizaje específicas. </p>
+OBJETIVO GENERAL
 
-API BrainyKids es una API desarrollada en Python para la gestión de usuarios, tutores,
-módulos y el progreso de los usuarios en una plataforma educativa. 
-El proyecto está organizado en módulos siguiendo buenas prácticas de arquitectura para aplicaciones web modernas.
+Desarrollar una API educativa llamada BrainyKids, diseñada para gestionar usuarios, tutores, módulos educativos y el progreso de aprendizaje infantil, ofreciendo una plataforma estructurada, segura e interactiva que contribuya al desarrollo cognitivo de niños de 3 a 6 años.
 
-## Estructura del Proyecto
-
-- **main.py**: Punto de entrada de la aplicación.
-- **requirements.txt**: Dependencias del proyecto.
-- **config/**: Configuración general, base de datos y seguridad.
-- **crud/**: Operaciones CRUD para los diferentes modelos.
-- **models/**: Definición de modelos de datos.
-- **routes/**: Definición de rutas/endpoints de la API.
-- **schemas/**: Esquemas de validación y serialización de datos.
-
-## Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone <URL-del-repositorio>
-   cd API BrainyKids
-   ```
-2. Crea un entorno virtual (opcional pero recomendado):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # En Windows: venv\Scripts\activate
-   ```
-3. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Uso
-
-1. Configura las variables necesarias en el archivo de configuración.
-2. Ejecuta la aplicación:
-   ```bash
-   python main.py
-   ```
-3. Accede a la documentación interactiva (por ejemplo, Swagger UI) en `http://localhost:8000/docs` si está habilitada.
-
-## Funcionalidades principales
-- Registro y autenticación de usuarios y tutores.
-- Gestión de módulos educativos.
-- Seguimiento del progreso de los usuarios.
-- Seguridad y manejo de roles.
-
-## Contribución
-
-¡Las contribuciones son bienvenidas! Por favor, abre un issue o pull request para sugerencias o mejoras.
-
-
+OBJETIVOS ESPECÍFICOS
+Gestionar el registro y autenticación de usuarios y tutores.
+Administrar módulos educativos interactivos para niños.
+Registrar y dar seguimiento al progreso de cada usuario.
+Permitir la asignación de actividades educativas personalizadas.
+Facilitar la supervisión del avance por parte de tutores y docentes.
+Garantizar la seguridad de los datos mediante autenticación y roles.
+Optimizar la experiencia educativa mediante una estructura modular.
+Proporcionar una API escalable para futuras mejoras y funciones.
