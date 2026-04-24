@@ -1,0 +1,121 @@
+# BrainyKids API
+
+API REST desarrollada con **FastAPI** para la aplicación educativa **BrainyKids**, enfocada en el aprendizaje interactivo de niños de 3 a 6 años, incluyendo aquellos con TDAH.
+
+Esta API gestiona usuarios, módulos educativos, progreso de aprendizaje y un sistema de recompensas.
+---
+
+# Tecnologías utilizadas
+
+* **Python 3**
+* **FastAPI**
+* **SQLAlchemy**
+* **MySQL**
+* **JWT (JSON Web Tokens)**
+* **Uvicorn**
+* **Pydantic**
+
+---
+
+# Descripción del proyecto
+
+BrainyKids es una plataforma educativa que permite a los niños aprender:
+
+*  Números
+*  Letras
+*  Colores
+*  Figuras
+
+La API permite:
+
+* Registrar usuarios (niños)
+* Gestionar módulos educativos
+* Registrar y consultar progreso
+* Aplicar gamificación mediante recompensas
+* Autenticación segura con JWT
+
+---
+
+# Arquitectura del proyecto
+
+```
+API BrainyKids/
+├── config/        # Configuración de base de datos y seguridad
+├── crud/          # Lógica de negocio (operaciones CRUD)
+├── models/        # Modelos de base de datos (SQLAlchemy)
+├── routes/        # Endpoints de la API
+├── schemas/       # Validaciones (Pydantic)
+├── Test/          # Pruebas
+├── main.py        # Punto de entrada
+├── .env           # Variables de entorno
+└── requirements.txt
+
+
+## 👤 Usuarios
+
+| Método | Endpoint                   | Descripción       |
+| ------ | -------------------------- | ----------------- |
+| POST   | /usuarios/                 | Crear usuario     |
+| GET    | /usuarios/                 | Listar usuarios   |
+| DELETE | /usuarios/{id}             | Eliminar usuario  |
+| PUT    | /usuarios/{id}/recompensas | Sumar recompensas |
+
+---
+
+## Módulos
+
+| Método | Endpoint  | Descripción    |
+| ------ | --------- | -------------- |
+| GET    | /modulos/ | Listar módulos |
+
+---
+
+##  Progreso
+
+| Método | Endpoint               | Descripción         |
+| ------ | ---------------------- | ------------------- |
+| POST   | /progreso/             | Registrar progreso  |
+| GET    | /progreso/{usuario_id} | Consultar progreso  |
+| PUT    | /progreso/             | Actualizar progreso |
+
+---
+
+#  Sistema de gamificación
+
+BrainyKids incluye un sistema de recompensas:
+
+*  Puntos por actividades
+*  Progreso por módulo
+*  Motivación del usuario
+
+El progreso académico se separa de las recompensas para mantener una arquitectura clara.
+
+---
+
+
+#  Características clave
+
+* ✔ Arquitectura modular
+* ✔ Autenticación segura con JWT
+* ✔ Separación de responsabilidades
+* ✔ Validación de datos con Pydantic
+* ✔ Base de datos relacional
+* ✔ Sistema de progreso educativo
+* ✔ Gamificación integrada
+
+---
+
+#  Seguridad
+
+* Autenticación con JWT
+* Protección de endpoints
+* Manejo de sesiones stateless
+* Variables sensibles en `.env`
+
+---
+
+#  Objetivo del proyecto
+
+Desarrollar una API educativa accesible e inclusiva que permita adaptar el aprendizaje a las necesidades de cada niño, mejorando su experiencia mediante tecnología y gamificación.
+
+---
